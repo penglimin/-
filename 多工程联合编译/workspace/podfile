@@ -1,0 +1,17 @@
+
+workspace 'demo'
+xcodeproj '../staticLib/staticLib.xcodeproj'
+xcodeproj '../demo/demo.xcodeproj'
+
+target 'staticLib' do
+pod 'AFNetworking'
+xcodeproj '../staticLib/staticLib.xcodeproj'
+end
+
+
+target 'demo' do
+
+pod 'AFNetworking'
+
+end
+
